@@ -17,6 +17,7 @@ namespace VIBA
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Offert());
+            Console.WriteLine("Hej");
         }
     }
 }
