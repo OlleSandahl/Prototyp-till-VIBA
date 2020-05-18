@@ -16,5 +16,15 @@ namespace VIBA
         {
             InitializeComponent();
         }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Lagerhantering_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
