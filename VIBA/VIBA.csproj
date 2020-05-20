@@ -58,6 +58,12 @@
     <Compile Include="Lagerhantering.Designer.cs">
       <DependentUpon>Lagerhantering.cs</DependentUpon>
     </Compile>
+    <Compile Include="Offert Ny.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Offert Ny.Designer.cs">
+      <DependentUpon>Offert Ny.cs</DependentUpon>
+    </Compile>
     <Compile Include="Offert.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +83,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Lagerhantering.resx">
       <DependentUpon>Lagerhantering.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Offert Ny.resx">
+      <DependentUpon>Offert Ny.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Offert.resx">
       <DependentUpon>Offert.cs</DependentUpon>
