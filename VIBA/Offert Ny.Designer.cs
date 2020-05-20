@@ -67,6 +67,21 @@
             this.Pris = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.label14 = new System.Windows.Forms.Label();
+            this.OffertNr = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.KundNr = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Företag1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.orgNR = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Aredd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Artikelnrrrr = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Artikelnnnnn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Antal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Leveransdatum = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Summa1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -88,7 +103,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(947, 288);
+            this.label9.Location = new System.Drawing.Point(861, 292);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(182, 25);
@@ -98,11 +113,17 @@
             // dataGridView3
             // 
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(952, 317);
+            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Artikelnrrrr,
+            this.Artikelnnnnn,
+            this.Antal,
+            this.Leveransdatum,
+            this.Summa1});
+            this.dataGridView3.Location = new System.Drawing.Point(866, 317);
             this.dataGridView3.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.RowHeadersWidth = 51;
-            this.dataGridView3.Size = new System.Drawing.Size(592, 185);
+            this.dataGridView3.Size = new System.Drawing.Size(678, 185);
             this.dataGridView3.TabIndex = 64;
             // 
             // button4
@@ -137,7 +158,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(947, 54);
+            this.label4.Location = new System.Drawing.Point(861, 54);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(110, 25);
@@ -147,11 +168,17 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(952, 82);
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.OffertNr,
+            this.KundNr,
+            this.Företag1,
+            this.orgNR,
+            this.Aredd});
+            this.dataGridView1.Location = new System.Drawing.Point(866, 83);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(592, 202);
+            this.dataGridView1.Size = new System.Drawing.Size(678, 202);
             this.dataGridView1.TabIndex = 59;
             // 
             // label1
@@ -230,9 +257,9 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(12, 292);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(100, 17);
+            this.label7.Size = new System.Drawing.Size(51, 17);
             this.label7.TabIndex = 74;
-            this.label7.Text = "Leveransvilkor";
+            this.label7.Text = "adress";
             // 
             // textBox6
             // 
@@ -244,7 +271,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(12, 346);
+            this.label10.Location = new System.Drawing.Point(8, 346);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(124, 17);
             this.label10.TabIndex = 76;
@@ -416,11 +443,132 @@
             this.label13.TabIndex = 86;
             this.label13.Text = "fri text för special anpassning av produkt";
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(608, 714);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(84, 27);
+            this.button3.TabIndex = 87;
+            this.button3.Text = "Skicka offert";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(461, 719);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(140, 17);
+            this.label14.TabIndex = 88;
+            this.label14.Text = "Skicka offert per mail";
+            // 
+            // OffertNr
+            // 
+            this.OffertNr.HeaderText = "Offertnummer";
+            this.OffertNr.MinimumWidth = 6;
+            this.OffertNr.Name = "OffertNr";
+            this.OffertNr.Width = 125;
+            // 
+            // KundNr
+            // 
+            this.KundNr.HeaderText = "Kundnummer";
+            this.KundNr.MinimumWidth = 6;
+            this.KundNr.Name = "KundNr";
+            this.KundNr.Width = 125;
+            // 
+            // Företag1
+            // 
+            this.Företag1.HeaderText = "Företag";
+            this.Företag1.MinimumWidth = 6;
+            this.Företag1.Name = "Företag1";
+            this.Företag1.Width = 125;
+            // 
+            // orgNR
+            // 
+            this.orgNR.HeaderText = "Org-nummer";
+            this.orgNR.MinimumWidth = 6;
+            this.orgNR.Name = "orgNR";
+            this.orgNR.Width = 125;
+            // 
+            // Aredd
+            // 
+            this.Aredd.HeaderText = "Adress";
+            this.Aredd.MinimumWidth = 6;
+            this.Aredd.Name = "Aredd";
+            this.Aredd.Width = 125;
+            // 
+            // Artikelnrrrr
+            // 
+            this.Artikelnrrrr.HeaderText = "Artikelnummer";
+            this.Artikelnrrrr.MinimumWidth = 6;
+            this.Artikelnrrrr.Name = "Artikelnrrrr";
+            this.Artikelnrrrr.Width = 125;
+            // 
+            // Artikelnnnnn
+            // 
+            this.Artikelnnnnn.HeaderText = "Artikelnamn";
+            this.Artikelnnnnn.MinimumWidth = 6;
+            this.Artikelnnnnn.Name = "Artikelnnnnn";
+            this.Artikelnnnnn.Width = 125;
+            // 
+            // Antal
+            // 
+            this.Antal.HeaderText = "Antal";
+            this.Antal.MinimumWidth = 6;
+            this.Antal.Name = "Antal";
+            this.Antal.Width = 125;
+            // 
+            // Leveransdatum
+            // 
+            this.Leveransdatum.HeaderText = "Pris";
+            this.Leveransdatum.MinimumWidth = 6;
+            this.Leveransdatum.Name = "Leveransdatum";
+            this.Leveransdatum.Width = 125;
+            // 
+            // Summa1
+            // 
+            this.Summa1.HeaderText = "Summa";
+            this.Summa1.MinimumWidth = 6;
+            this.Summa1.Name = "Summa1";
+            this.Summa1.Width = 125;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(866, 509);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(90, 31);
+            this.button5.TabIndex = 89;
+            this.button5.Text = "Accept";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(973, 509);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(90, 31);
+            this.button6.TabIndex = 90;
+            this.button6.Text = "Ändra";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(1084, 509);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(90, 31);
+            this.button7.TabIndex = 91;
+            this.button7.Text = "Ta bort";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
             // Offert_Ny
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1567, 752);
+            this.ClientSize = new System.Drawing.Size(1567, 767);
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.textBox9);
             this.Controls.Add(this.label12);
@@ -502,5 +650,20 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Artikelnrrrr;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Artikelnnnnn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Antal;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Leveransdatum;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Summa1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn OffertNr;
+        private System.Windows.Forms.DataGridViewTextBoxColumn KundNr;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Företag1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn orgNR;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Aredd;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
     }
 }
