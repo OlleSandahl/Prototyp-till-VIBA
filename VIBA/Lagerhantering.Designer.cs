@@ -44,6 +44,7 @@
             this.Ordernummer = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Organisationsnummer = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Namn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Datum = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Pris = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -57,9 +58,9 @@
             this.Artikelnamn,
             this.Hylla,
             this.Antal});
-            this.dataGridView1.Location = new System.Drawing.Point(20, 282);
+            this.dataGridView1.Location = new System.Drawing.Point(20, 269);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(476, 126);
+            this.dataGridView1.Size = new System.Drawing.Size(573, 126);
             this.dataGridView1.TabIndex = 0;
             // 
             // Artikelnummer
@@ -87,7 +88,7 @@
             this.label1.AutoSize = true;
             this.label1.CausesValidation = false;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(20, 259);
+            this.label1.Location = new System.Drawing.Point(16, 246);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(85, 20);
             this.label1.TabIndex = 35;
@@ -96,7 +97,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(20, 414);
+            this.button1.Location = new System.Drawing.Point(16, 401);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(106, 32);
             this.button1.TabIndex = 36;
@@ -105,7 +106,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(432, 33);
+            this.button4.Location = new System.Drawing.Point(536, 33);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(63, 22);
             this.button4.TabIndex = 42;
@@ -115,7 +116,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(271, 16);
+            this.label8.Location = new System.Drawing.Point(375, 16);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(53, 13);
             this.label8.TabIndex = 41;
@@ -123,7 +124,7 @@
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(274, 33);
+            this.textBox7.Location = new System.Drawing.Point(378, 33);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(152, 20);
             this.textBox7.TabIndex = 40;
@@ -135,10 +136,11 @@
             this.Ordernummer,
             this.Organisationsnummer,
             this.Namn,
+            this.Datum,
             this.Pris});
             this.dataGridView2.Location = new System.Drawing.Point(20, 59);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(476, 124);
+            this.dataGridView2.Size = new System.Drawing.Size(577, 124);
             this.dataGridView2.TabIndex = 39;
             // 
             // label3
@@ -146,7 +148,7 @@
             this.label3.AutoSize = true;
             this.label3.CausesValidation = false;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(16, 31);
+            this.label3.Location = new System.Drawing.Point(20, 36);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(60, 20);
             this.label3.TabIndex = 43;
@@ -174,8 +176,13 @@
             // 
             // Namn
             // 
-            this.Namn.HeaderText = "Namn";
+            this.Namn.HeaderText = "Företag";
             this.Namn.Name = "Namn";
+            // 
+            // Datum
+            // 
+            this.Datum.HeaderText = "Datum";
+            this.Datum.Name = "Datum";
             // 
             // Pris
             // 
@@ -186,7 +193,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(513, 472);
+            this.ClientSize = new System.Drawing.Size(636, 472);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button4);
@@ -219,11 +226,12 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ordernummer;
         private System.Windows.Forms.DataGridViewTextBoxColumn Organisationsnummer;
         private System.Windows.Forms.DataGridViewTextBoxColumn Namn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Datum;
         private System.Windows.Forms.DataGridViewTextBoxColumn Pris;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button2;
     }
 }
