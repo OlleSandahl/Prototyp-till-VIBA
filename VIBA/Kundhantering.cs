@@ -21,5 +21,10 @@ namespace VIBA
         {
 
         }
+
+        private void Kundhantering_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
